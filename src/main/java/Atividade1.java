@@ -1,5 +1,3 @@
-package br.com.rodolphohiroshi.dsp20191.aulas0104.ap;
-
 import java.io.*;
 
 public class Atividade1{
@@ -39,6 +37,4 @@ public class Atividade1{
 
 
 }
-
-
 

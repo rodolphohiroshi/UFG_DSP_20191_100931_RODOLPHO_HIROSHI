@@ -1,1 +1,0 @@
-O Programa está incompleto, pois não lê o arquivo e, portanto, não imprime o seu conteúdo.

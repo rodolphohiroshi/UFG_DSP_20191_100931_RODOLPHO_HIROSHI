@@ -1,2 +1,0 @@
-# UFG_DSP_20191_100931_RODOLPHO_HIROSHI
-Repositório Disciplina de Desenvolvimento para Persistência

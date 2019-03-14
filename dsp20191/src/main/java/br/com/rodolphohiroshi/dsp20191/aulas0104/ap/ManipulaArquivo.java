@@ -1,35 +1,44 @@
 package br.com.rodolphohiroshi.dsp20191.aulas0104.ap;
 
-import java.io.File;
 import java.io.*;
-import java.util.Scanner;
-public class ManipulaArquivo {
 
-    public static void main(String[] args) throws IOException  {
+public class Atividade1{
 
+    public static void main(String[] args) {
 
-        File arq = new File("src/main/resources/primeiroArquivo.txt");
-        arq.createNewFile();
+        File file = new File("src/main/resources/Atividade1.txt");
 
-        PrintWriter pw = new PrintWriter (new BufferedWriter (new FileWriter (arq)));
-        pw.printf("teste");
+        try{
+            //Cria arquivo txt
+            file.createNewFile();
 
-        Scanner ler = new Scanner(System.in);
+            FileWriter fileWriter = new FileWriter(file);
+            BufferedWriter escrever = new BufferedWriter(fileWriter);
+            escrever.write("Atividade 1 concluida");
 
-            FileReader arq1 = new FileReader(arq);
-            BufferedReader lerArq = new BufferedReader(arq1);
-
-            String linha = lerArq.readLine();
-
-            linha = lerArq.readLine(); // lê da segunda até a última linha
+            escrever.close();
+            fileWriter.close();
 
 
-            arq1.close();
+            //Ler arquivo Txt
+            FileReader ler = new FileReader(file);
+            BufferedReader lerlinha = new BufferedReader(ler);
+            String linha = lerlinha.readLine();
 
+           while(linha != null){
+                System.out.println(linha);
+                linha = lerlinha.readLine();
+            }
+
+
+            } catch(IOException ex){
 
         }
 
     }
+
+
+}
 
 
 

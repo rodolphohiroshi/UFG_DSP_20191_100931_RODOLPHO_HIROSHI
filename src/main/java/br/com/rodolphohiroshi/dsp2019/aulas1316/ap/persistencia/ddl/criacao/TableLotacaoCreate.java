@@ -6,7 +6,7 @@ import br.com.rodolphohiroshi.dsp2019.aulas1316.ap.persistencia.base.Persistenci
  * Created by Rodolpho Hiroshi on 10/04/2019.
  */
 public class TableLotacaoCreate extends PersistenciaJdbc{
-    public boolean criaTabela() throws Exception{
+    public boolean createTable() throws Exception{
 
         preparaPersistencia();
 

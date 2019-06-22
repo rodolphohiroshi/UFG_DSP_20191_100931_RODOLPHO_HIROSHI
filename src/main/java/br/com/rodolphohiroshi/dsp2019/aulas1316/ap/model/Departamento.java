@@ -10,12 +10,16 @@ public class Departamento {
     private Long id;
     private String nome;
 
-    public Departamento(){}
 
     public Departamento(Long id, String nome){
             this.id = id;
             this.nome = nome;
     }
+
+    public Departamento() {
+
+    }
+
     public Long getId() {
         return id;
     }

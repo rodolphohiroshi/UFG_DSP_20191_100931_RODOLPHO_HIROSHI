@@ -6,13 +6,13 @@ import br.com.rodolphohiroshi.dsp2019.aulas1316.ap.persistencia.base.Persistenci
  * Created by Rodolpho Hiroshi on 10/04/2019.
  */
 public class TableFuncionarioCreate extends PersistenciaJdbc {
-    public boolean criaTabela() throws Exception{
+    public boolean createTable() throws Exception{
 
         preparaPersistencia();
 
         System.out.println("Criando a tabela Funcionario ");
 
-        String sql = "CREATE TABLE IF NOT EXISTS LOTACAO(\n" +
+        String sql = "CREATE TABLE IF NOT EXISTS FUNCIONARIO(\n" +
                 "ID_FUNCIONARIO LONG NOT NULL PRIMARY KEY,\n" +
                 "NOME STRING NOT NULL"+
                 "MATRICULA STRING NOT NULL"+

@@ -6,11 +6,11 @@ package br.com.rodolphohiroshi.dsp2019.aulas1316.ap.model;
 public class Funcionario {
     private Long id;
     private String nome;
-    private String matricula;
+    private Long matricula;
 
     public Funcionario(){}
 
-    public Funcionario(Long id, String nome, String matricula){
+    public Funcionario(Long id, String nome, Long matricula){
         this.id = id;
         this.nome = nome;
         this.matricula = matricula;
@@ -32,11 +32,11 @@ public class Funcionario {
         this.nome = nome;
     }
 
-    public String getMatricula() {
+    public Long getMatricula() {
         return matricula;
     }
 
-    public void setMatricula(String matricula) {
+    public void setMatricula(Long matricula) {
         this.matricula = matricula;
     }
 }

@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="UFG_DSP_20191_100931_RODOLPHO_HIROSHI" target="1.5" />
+      <module name="UFG_DSP_20191_100931_RODOLPHO_HIROSHI" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

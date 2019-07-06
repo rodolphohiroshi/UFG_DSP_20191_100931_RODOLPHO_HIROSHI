@@ -80,13 +80,13 @@ public class Start {
         aluno.setNota1(n1);
         aluno.setNota2(n2);
 
-        gravarAluno(aluno);
+        salvarAluno(aluno);
 
     }
 
-    private static void gravarAluno(Aluno aluno) {
+    private static void salvarAluno(Aluno aluno) {
         try {
-            verificaArquivo();
+            verificaArq();
             doStream.writeUTF(aluno.toString());
             doStream.close();
             foStream.close();
@@ -97,13 +97,13 @@ public class Start {
 
     }
 
-        private static void verificaArquivo() throws IOException {
+        private static void verificaArq() throws IOException {
             try {
                 foStream = new FileOutputStream(arq);
                 doStream = new DataOutputStream(foStream);
             } catch (FileNotFoundException e) {
                 arq.createNewFile();
-                verificaArquivo();
+                verificaArq();
             }
         }
 

@@ -8,7 +8,7 @@ public class PersisteDepartamento extends PersistenciaJdbc {
     private Departamento departamento;
 
     public PersisteDepartamento(){
-        departamento = new Departamento();
+        departamento = new Departamento(1, "Desenvolvimento");
     }
 
     public boolean persisteCargo(Departamento departamento) throws Exception{

@@ -4,7 +4,7 @@ public class Cargo {
     private Long id;
     private String nome;
     private Double salario;
-    public Cargo() {
+    public Cargo(int i, String engenheiro_de_software, double v) {
     }
 
     public Long getId() {

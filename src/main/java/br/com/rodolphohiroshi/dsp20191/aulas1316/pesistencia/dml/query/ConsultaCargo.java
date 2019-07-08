@@ -11,7 +11,7 @@ public class ConsultaCargo extends PersistenciaJdbc {
     private Cargo cargo;
 
     public ConsultaCargo(){
-        cargo = new Cargo();
+        cargo = new Cargo(1, "Engenheiro de Software", 100.00);
     }
 
     public Cargo consultaPorId(Long id) throws Exception{

@@ -11,7 +11,7 @@ public class PersisteCargo extends PersistenciaJdbc {
     private Cargo cargo;
 
     public PersisteCargo(){
-        cargo = new Cargo();
+        cargo = new Cargo(1, "Engenheiro de Software", 4000.00);
     }
 
     public Cargo consultaPorId(Long id) throws Exception{

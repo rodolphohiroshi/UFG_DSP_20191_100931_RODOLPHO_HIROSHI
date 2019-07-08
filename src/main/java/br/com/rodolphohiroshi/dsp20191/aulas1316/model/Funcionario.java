@@ -8,7 +8,11 @@ public class Funcionario {
 
     private Long matricula;
 
+    public Funcionario(long id, String nome, long matricula) {
+    }
+
     public Funcionario() {
+
     }
 
     public Long getId() {

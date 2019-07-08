@@ -14,7 +14,13 @@ public class Lotacao {
 
     private Departamento departamento;
 
+    private Funcionario funcionario;
+
+    public Lotacao(long id, java.sql.Date data_inicial, java.sql.Date data_final, Cargo cargo, Departamento departamento, Funcionario funcionario) {
+    }
+
     public Lotacao() {
+
     }
 
     public Long getId() {
@@ -55,5 +61,13 @@ public class Lotacao {
 
     public void setDepartamento(Departamento departamento) {
         this.departamento = departamento;
+    }
+
+    public Funcionario getFuncionario() {
+        return funcionario;
+    }
+
+    public void setFuncionario(Funcionario funcionario) {
+        this.funcionario = funcionario;
     }
 }

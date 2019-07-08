@@ -11,7 +11,7 @@ public class ConsultaDepartamento extends PersistenciaJdbc {
     private Departamento departamento;
 
     public ConsultaDepartamento(){
-        departamento = new Departamento();
+        departamento = new Departamento(1, "Desenvolvimento");
     }
 
     public Departamento consultaPorId(Long id) throws Exception{

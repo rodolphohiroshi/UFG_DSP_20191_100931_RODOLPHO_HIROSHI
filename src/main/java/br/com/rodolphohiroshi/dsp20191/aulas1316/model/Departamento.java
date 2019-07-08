@@ -6,7 +6,7 @@ public class Departamento {
 
     private String nome;
 
-    public Departamento() {
+    public Departamento(int i, String desenvolvimento) {
     }
 
     public Long getId() {
